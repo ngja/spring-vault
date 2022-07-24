@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  app:
+    name: spring-vault
+  config:
+    import: custom.yml
+
+name: vault-web:application.yml
+description: "${spring.app.name} is a Spring Boot application written by ${name:Unknow} and this is random ${random.value}"
+
+my:
+  service:
+    is-enabled: true
+    remote-address: 192.168.1.1
+    security:
+      username: "admin"
+      roles:
+        - "USER"
+        - "ADMIN"
