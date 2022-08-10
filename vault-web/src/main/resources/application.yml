@@ -2,6 +2,11 @@ server:
   port: 8083
 
 spring:
+  profiles:
+    group:
+      production: # 이 경우 --spring.profiles.active=production 설정일 경우 적용된다.
+        - "proddb"
+        - "prodmq"
   app:
     name: spring-vault
   config:
