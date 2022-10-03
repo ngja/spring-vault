@@ -1,6 +1,6 @@
 spring:
   sql:
     init:
-      mode: always
+      mode: embedded
   profiles:
     active: security
