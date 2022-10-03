@@ -38,3 +38,9 @@ out/
 
 ### mac ###
 .DS_Store
+
+### http ###
+http
+
+## custom
+application-security.yml
