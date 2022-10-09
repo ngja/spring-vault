@@ -1,6 +1,8 @@
 spring:
   sql:
     init:
-      mode: embedded
+      mode: always
   profiles:
     active: security
+  main:
+    allow-circular-references: true
